@@ -1,7 +1,197 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
     margin: 0px;
+    background-color: #CCC;
+
+    padding-bottom: 200px;
 }
 
 .header_logo img{
-    max-width: 100px;
+    max-width: 100px;   
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1{
+    height: 150px;
+}
+
+.header_menu a{
+    text-decoration: none;
+    color: #222;
+    padding: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.header_menu a:hover{
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    margin-right: 25px;
+    margin-left: 23px;
+    transition: 0.5s;
+}
+
+.header_menu ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/*Aqui começa o corpo, essa é a primeiraseção*/
+/*---------------------------------------------------------------*/
+
+.banner{
+    background-image: url('../images/einstein.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner h2{
+    font-size: 40px;
+    color: #FFF;
+    max-width: 650px;
+    margin-top: 100px;
+    text-shadow: 2px 0px 2px #aaa;
+}
+
+.banner_div{
+    align-items: flex-start;
+}
+
+/*Aqui começa a section onde será dividida em duas partes...*/
+/*-----------------------------------------------------------------------------*/
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.section_biografia p{
+    font-size: 20px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estilo_emc2{
+    font-size: 40px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.section_biografia h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sublinhado_titulo{
+    height: 2px;
+    width: 150px;
+    background-color: #000;
+    margin-bottom: 40px;
+}
+
+.section_historia table{
+    border-collapse: collapse;
+}
+
+.coluna{
+    flex-direction: column;
+}
+
+.card{
+    margin: 20px;
+}
+
+.card p{
+    width: 90%;
+}
+
+.linha_vertical{
+    height: 70px;
+    width: 5px;
+    background-color: #000;
+    align-self: center;
+}
+
+.section_historia td:nth-child(1){
+    border-right: 2px solid #000;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+.esquerda_card{
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.card .info{
+    margin-left: 20px;
+    width: 100%;
+}
+
+.section_historia h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section_historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sublinhado_historia{
+    margin-bottom: 70px;
+}
+
+@media (max-width:800px) and (min-width:450px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+
 }

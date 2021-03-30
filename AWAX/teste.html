@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li class="item">Item1</li>
+        <li class="item">Item2</li>
+        <li class="item">Item3</li>
+    </ul>
+
+    <form action="">
+        <input type="text" name="sei la" value="valor">
+    </form>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .item{
+            position: relative;
+            margin: 10px 0px;
+        }
+        .item::before{
+            content: '';
+            position: relative;
+            padding: 5px 15px;
+            background-image: url(assets/images/check.png);
+            background-size: cover;
+            margin-right: 15px;
+        }
+    </style>
+</body>
+</html>

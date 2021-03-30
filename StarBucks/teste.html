@@ -1,0 +1,34 @@
+<html>
+    <style>
+        *{
+            margin: 0;
+        }
+        div{
+            min-width: 40px;
+            min-height: 40px;
+        }
+        .a{
+            background-color: rebeccapurple;
+            grid-area: a;
+        }
+        .b{
+            background-color: red;
+            grid-area: b;
+        }
+        .c{
+            background-color: green;
+            grid-area: c;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, fr);
+            grid-template-areas: "a b" 
+                                 "c b";
+        }
+    </style>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</html>

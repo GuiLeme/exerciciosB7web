@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+header .line{
+    background-color: #117050;
+    height: 15px;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+}
+
+header .logo img{
+    max-width: 70px;
+}
+header .logo{
+    padding-top: 20px;
+}
+
+.header-infos{
+    padding-top: 20px;
+}
+
+.pesquisar input{
+    border: 0px;
+    outline: 0px;
+    height: 30px;
+}
+
+.pesquisar form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.pesquisar button img{
+    max-width: 23px;
+}
+
+.pesquisar button{
+    border: 0px;
+    background-color: white;
+    margin-left: -35px;
+    
+}
+
+.pesquisar{
+    border: 1px solid #ccc;
+}
+
+.pesquisar input::placeholder{
+    padding-left: 15px;
+}
+
+.pesquisar input{
+    padding-left: 15px;
+}
+
+.header-infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu{
+    margin-left: 40px;
+}
+
+.header-menu img{
+    max-width: 30px;
+}
+
+
+
+/* Segunda parte: section do banner lá...*/
+/*-----------------------------------------------------*/
+
+.section-banner{
+    background-image: url(../media/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.coluna{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.section-banner h1{
+    margin-top: 50px;
+    font-size: 100px;
+    line-height: 100px;
+    margin-top: 80px;
+}
+.section-banner p{
+    margin-top: 30px;
+}
+
+
+/*Daqui para baixo, preciso rever o que fazer, pq me parece 
+que vou ter que usar a imagem como fundo, e colocar alguma coisa por cima
+E assim vou ter o efeito de hover que eu quero*/
+.section-banner--img{
+    display: flex;
+    margin-top: 70px;
+}
+
+.section-banner--img img{
+    width: 140px;
+    border-radius: 80px;
+    border: 6px solid #386E2A;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.section-banner--img div{
+    width: 140px;
+    border-radius: 80px;
+    margin-right: 20px;
+}
+
+/* Agora vamos começar a galeria númer 1*/
+/*--------------------------------------------------------*/
+
+.section-galeria--area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b" 
+                         "c b";
+}
+
+.section-galeria--area{
+    width: 100vw;
+}
+
+.section-galeria--desc{
+    grid-area: a;
+}
+.section-galeria--image1{
+    grid-area: b;
+    background-image: url("../media/f1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section-galeria--image2{
+    grid-area: c;
+    background-image: url("../media/f2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.section-galeria--desc{
+    padding: 110px;
+}
+
+.section-galeria--desc h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.section-galeria--desc .citacao{
+    font-size: 17px;
+    font-family: 'Open-Sans', Arial;
+    margin-top: 20px;
+}
+.section-galeria--desc p{
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 20px;
+}
+
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #777;
+    margin-top:40px;
+    padding: 10px 30px;
+    border: 1px solid #454545;
+    display: inline-block;
+}
+.button:hover{
+    color: #fff;
+    background-color: #777;
+}
+
+.tarja{
+    width: 170px;
+    height: 22px;
+    background-color: #386E2A;
+}
+
+
+
+/*-----------------------------------------------------*/
+
+
+.area-2{
+    grid-template-areas: "b a"
+                         "b c";
+}
+
+.area-2 .section-galeria--image1{
+    background-image: url("../media/f3.jpg");
+}
+.area-2 .section-galeria--image2{
+    background-image: url("../media/f4.jpg");
+}
+
+/*-------------------------------------------------------*/
+
+.area-3--img1{
+    background-image: url("../media/f5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.area-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area-3 h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.area-3--desc{
+    font-size: 15px;
+    font-weight:normal;
+    margin-top: 20px;
+}
+
+.area-3--content{
+    padding: 300px 150px;
+    background-image: url("../media/bg2.jpg");
+    background-position: left;
+    background-size: cover;
+}
+
+
+@media (max-width: 1140px) and (min-width:769px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:768px) and (min-width:556px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-galeria--area{
+        grid-template-columns: 3fr 2fr;
+    }
+    .section-galeria--desc{
+        padding: 70px
+    }
+    .area-2{
+        grid-template-columns: 2fr 3fr;
+    }
+    .area-3--content{
+        padding: 250px 80px;
+    }
+}
+
+@media (max-width:555px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .pesquisar{
+        max-width: 150px ;
+        border: 1px solid #ccc;
+        margin-right: 30px;
+    }
+}

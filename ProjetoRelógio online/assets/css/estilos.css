@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #ff0000;
+}
+
+
+/*Ainda vou desenvolver o header melhor...*/
+
+/*Aqui vou começar a seção principal*/
+/*-----------------------------------------------------------*/
+
+.section-slider{
+    max-width: 1140px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.section-slider .slider{
+    width: 300vw;
+
+}
+
+.section-slider .slide{
+    max-width: 1140px;
+    width: 100%;
+    display: inline-block;
+}
+
+.section-slider .slide-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-area h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.slide-area .cronometro{
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.slide-area .botoes{
+    margin-top: 40px;
+}
+
+.slide-area .botoes button{
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    outline: 0;
+    transition: 0.5s;
+}
+
+.slide-area .botoes button:hover{
+    background-color: #999;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.slide-area .botoes button:nth-child(2){
+    margin: 0 30px;
+}
+
+.slide-pointers{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pointer{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid #888;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #888;
+}

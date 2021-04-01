@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relógio online</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=0">
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <div>
+
+            </div>
+        </header>
+        <section>
+            <div class="section-slider">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="slide-area">
+                            <h1>Cronômetro</h1>
+                            <p class="slide-area--timer">Aqui vai um Cronômetro, você pode iniciar, pausar, ou recomeçar clicando nos botões</p>
+                            <div class="cronometro">00:00:00</div>
+                            <div class="botoes">
+                                <button onclick="comecar()">Começar</button>
+                                <button onclick="pausar()">Pausar</button>
+                                <button onclick="recomecar()">Recomeçar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-area">
+                            <h1>Cronômetro2</h1>
+                            <p class="slide-area--timer">Aqui vai um Cronômetro, você pode iniciar, pausar, ou recomeçar clicando nos botões</p>
+                            <div class="cronometro">00:00:00</div>
+                            <div class="botoes">
+                                <button onclick="comecar()">Começar</button>
+                                <button onclick="pausar()">Pausar</button>
+                                <button onclick="recomecar()">Recomeçar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-area">
+                            <h1>Cronômetro3</h1>
+                            <p class="slide-area--timer">Aqui vai um Cronômetro, você pode iniciar, pausar, ou recomeçar clicando nos botões</p>
+                            <div class="cronometro">00:00:00</div>
+                            <div class="botoes">
+                                <button onclick="comecar()">Começar</button>
+                                <button onclick="pausar()">Pausar</button>
+                                <button onclick="recomecar()">Recomeçar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-pointers">
+                    <div class="pointer selected" onclick="pointerSelector(this)" id="p1"></div>
+                    <div class="pointer" onclick="pointerSelector(this)" id="p2"></div>
+                    <div class="pointer" onclick="pointerSelector(this)" id="p3"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="assets/js/index.js"></script>
+</html>
